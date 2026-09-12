@@ -38,11 +38,20 @@ def equity_curve(rs):
     return out
 
 
-def summary(rs):
+def rolling_sharpe(rs, window=30):
+    return [sharpe(rs[i:i + window]) for i in range(len(rs) - window + 1)]
+
+
+def summary(rs, turnover=None):
     n = len(rs)
     m = sum(rs) / n
+    roll = rolling_sharpe(rs) if n >= 30 else []
     return {
         "days": n,
+        "win_rate": sum(1 for x in rs if x > 0) / n,
+        "daily_turnover": turnover,
+        "rolling30_sharpe_min": min(roll) if roll else None,
+        "rolling30_sharpe_pct_positive": (sum(1 for x in roll if x > 0) / len(roll)) if roll else None,
         "ann_return": m * ANN,
         "sharpe": sharpe(rs),
         "sortino": sortino(rs),

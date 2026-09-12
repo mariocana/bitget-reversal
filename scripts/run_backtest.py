@@ -18,7 +18,7 @@ dates, daily = backtest.run(closes, p)
 res = {
     "params": asdict(p),
     "period": {"start": str(dates[0]), "end": str(dates[-1]), "oos_start": str(oos_d[0])},
-    "total": metrics.summary(daily),
+    "total": metrics.summary(daily, turnover=1 / p.hold),
     "in_sample": metrics.summary(is_r),
     "out_of_sample": metrics.summary(oos_r),
 }
@@ -32,11 +32,18 @@ with open("reports/daily_returns.csv", "w", newline="") as f:
 
 def line(lbl, m):
     print(f"  {lbl:<14} n={m['days']:3d}  Sharpe={m['sharpe']:+5.2f} (±{m['sharpe_stderr']:.1f})  "
-          f"Sortino={m['sortino']:+6.2f}  maxDD={m['max_drawdown']*100:5.1f}%  ann={m['ann_return']*100:+6.1f}%")
+          f"Sortino={m['sortino']:+6.2f}  maxDD={m['max_drawdown']*100:5.1f}%  ann={m['ann_return']*100:+6.1f}%  win={m['win_rate']*100:4.1f}%")
 
 print(f"rToken reversal  LB={p.lookback} HOLD={p.hold} Q={p.quantile} cost={p.cost_bps}bps  "
       f"{dates[0]} -> {dates[-1]}  (OOS from {oos_d[0]})")
 line("total", res["total"]); line("in-sample", res["in_sample"]); line("out-of-sample", res["out_of_sample"])
+t = res["total"]
+print(f"  daily turnover = {t['daily_turnover']*100:.0f}% of book   OOS/IS Sharpe = {res['out_of_sample']['sharpe']/res['in_sample']['sharpe']:.2f} (alert if < 0.5)")
+roll = metrics.rolling_sharpe(daily)
+print(f"  rolling 30-session Sharpe: min={min(roll):+.2f}  median={sorted(roll)[len(roll)//2]:+.2f}  max={max(roll):+.2f}  positive={t['rolling30_sharpe_pct_positive']*100:.0f}% of windows")
+with open("reports/rolling30_sharpe.csv", "w", newline="") as f:
+    w = csv.writer(f); w.writerow(["window_end", "sharpe_30"])
+    for d, v in zip(dates[29:], roll): w.writerow([d, f"{v:.4f}"])
 
 if "--grid" in sys.argv:
     print("\nparameter grid (Sharpe total / IS / OOS):")

@@ -16,6 +16,10 @@
   },
   "total": {
     "days": 75,
+    "win_rate": 0.52,
+    "daily_turnover": 0.2,
+    "rolling30_sharpe_min": 0.5050517737481053,
+    "rolling30_sharpe_pct_positive": 1.0,
     "ann_return": 0.6281255453744827,
     "sharpe": 2.893107094547814,
     "sortino": 5.58595367222176,
@@ -25,6 +29,10 @@
   },
   "in_sample": {
     "days": 37,
+    "win_rate": 0.43243243243243246,
+    "daily_turnover": null,
+    "rolling30_sharpe_min": 0.5050517737481053,
+    "rolling30_sharpe_pct_positive": 1.0,
     "ann_return": 0.2651113250700383,
     "sharpe": 0.98660848847726,
     "sortino": 1.7649148586805266,
@@ -34,6 +42,10 @@
   },
   "out_of_sample": {
     "days": 38,
+    "win_rate": 0.6052631578947368,
+    "daily_turnover": null,
+    "rolling30_sharpe_min": 6.255815249962947,
+    "rolling30_sharpe_pct_positive": 1.0,
     "ann_return": 0.9815867598814415,
     "sharpe": 6.473958025042398,
     "sortino": 17.962601145304287,

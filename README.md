@@ -16,11 +16,15 @@ python scripts/liquidity_report.py         # live book snapshot + capacity (run 
 
 ## Results (net of 15 bps round-trip per rotated dollar)
 
-| | sessions | Sharpe | Sortino | max DD | ann. return |
-|---|---|---|---|---|---|
-| **total** (22 May → 9 Sep 2026) | 75 | **2.89** ± 1.8 | 5.59 | −5.8 % | +63 % |
-| in-sample (22 May → 16 Jul) | 37 | 0.99 ± 2.6 | 1.76 | −5.8 % | +27 % |
-| out-of-sample (17 Jul → 9 Sep) | 38 | 6.47 ± 2.6 | 17.96 | −1.4 % | +98 % |
+| | sessions | Sharpe | Sortino | max DD | ann. return | win rate |
+|---|---|---|---|---|---|---|
+| **total** (22 May → 9 Sep 2026) | 75 | **2.89** ± 1.8 | 5.59 | −5.8 % | +63 % | 52 % |
+| in-sample (22 May → 16 Jul) | 37 | 0.99 ± 2.6 | 1.76 | −5.8 % | +27 % | 43 % |
+| out-of-sample (17 Jul → 9 Sep) | 38 | 6.47 ± 2.6 | 17.96 | −1.4 % | +98 % | 61 % |
+
+Daily turnover 20 % of the book (one tranche of five). Rolling 30-session Sharpe
+(`reports/rolling30_sharpe.csv`): min +0.51, median +5.26, **positive in 100 % of windows**.
+No out-of-sample decay: OOS / IS Sharpe = 6.6 (the handbook flags < 0.5).
 
 The `±` is the standard error of an annualised Sharpe on that many sessions (`sqrt(252/n)`). Read the
 out-of-sample number as "positive and consistent", not as "6.5". Both halves are positive; the
