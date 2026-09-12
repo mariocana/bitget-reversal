@@ -1,0 +1,2 @@
+# Pure standard library, Python >= 3.9. Nothing to install.
+
