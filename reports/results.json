@@ -1,0 +1,44 @@
+{
+  "params": {
+    "lookback": 5,
+    "hold": 5,
+    "quantile": 0.2,
+    "seasoning": 10,
+    "min_universe": 55,
+    "vol_window": 20,
+    "vol_scale": true,
+    "cost_bps": 15.0
+  },
+  "period": {
+    "start": "2026-05-22",
+    "end": "2026-09-09",
+    "oos_start": "2026-07-17"
+  },
+  "total": {
+    "days": 75,
+    "ann_return": 0.6281255453744827,
+    "sharpe": 2.893107094547814,
+    "sortino": 5.58595367222176,
+    "max_drawdown": -0.05779048684388177,
+    "total_return": 0.19706612216497033,
+    "sharpe_stderr": 1.833030277982336
+  },
+  "in_sample": {
+    "days": 37,
+    "ann_return": 0.2651113250700383,
+    "sharpe": 0.98660848847726,
+    "sortino": 1.7649148586805266,
+    "max_drawdown": -0.05779048684388177,
+    "total_return": 0.03438787540445842,
+    "sharpe_stderr": 2.60975301720504
+  },
+  "out_of_sample": {
+    "days": 38,
+    "ann_return": 0.9815867598814415,
+    "sharpe": 6.473958025042398,
+    "sortino": 17.962601145304287,
+    "max_drawdown": -0.014343225694535389,
+    "total_return": 0.1572700634149462,
+    "sharpe_stderr": 2.5751852258368566
+  }
+}
