@@ -3,7 +3,7 @@
 Form (EN/CN, same fields): https://forms.gle/GyWZCMCPocgJdJon6
 Official post to retweet (required): https://x.com/Bitget_AI/status/2097230641452785752
 Track: **Alpha Factory** · Sub-theme: **rToken factor strategies**
-Repo: `https://github.com/mariocana/bitget-reversal` · X post: `https://x.com/mc95000/status/2098854862997926063` · Team Lead Bitget UID: `<UID>` (required — app: profile icon → number under the name)
+Repo: `https://github.com/mariocana/bitget-reversal` · X posts: `https://x.com/mc95000/status/2098854862997926063` (submission), `https://x.com/mc95000/status/2099502287865418233` (14 Sep live-book check) · Team Lead Bitget UID: `<UID>` (required — app: profile icon → number under the name)
 
 ---
 
