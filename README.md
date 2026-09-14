@@ -96,6 +96,27 @@ This strategy therefore trades only at the 16:00 ET close, rotates 20 % of the b
 measures capacity from `scripts/liquidity_report.py`, which snapshots the real book. The volume field
 is used for one thing only: ranking names to pick the universe.
 
+## Tradability check (live book, 14 Sep 2026)
+
+`scripts/liquidity_report.py` run at 13:58 UTC — 28 minutes into the US cash session — found **17 of the
+60 names with no two-sided order book at all** (RJPM, RWMT, RJNJ, RCOST, RXOM, RGLD, RDIA, RSOXL …).
+Median spread on the 43 live books: 7.1 bps, p90 17.6 bps. Median depth over 20 levels on the thinner
+side: $54k, p10 $23k. Strategy capacity at 10 % participation of the thin tail: **~$280k**.
+
+`scripts/tradability_check.py` re-runs the backtest without the 17 untradable names:
+
+| | sessions | Sharpe | IS | OOS | max DD | rolling-30 min |
+|---|---|---|---|---|---|---|
+| all 60 names (figures above) | 75 | 2.89 | 0.99 | 6.47 | −5.8 % | +0.51 |
+| **43 names with a live book** | 72 | **5.02** | **2.30** | 8.83 | −4.1 % | +2.61 |
+| 43 names, 25 bps costs | 72 | 4.76 | 2.07 | 8.53 | −4.1 % | +2.41 |
+
+The untradable names are mostly large-cap defensives and ETFs, where one-week reversal is weak; they
+were diluting the signal. The result is not carried by them — it strengthens without them, and the
+in-sample half improves the most. The headline figures above keep all 60 names because we have one
+book snapshot, not a history of them; a proper tradability filter would need the book at every close.
+Snapshots are committed under `data/orderbook_*.json`.
+
 ## Limitations
 
 - 75 sessions is short. The IS / OOS asymmetry could be regime. We report it rather than smooth it.

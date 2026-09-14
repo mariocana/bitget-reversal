@@ -20,12 +20,13 @@ def depth_report(symbols, levels=20):
     return out
 
 
-def capacity(report, participation=0.10, hold=5, quantile=0.2, universe=60):
+def capacity(report, participation=0.10, hold=5, quantile=0.2, universe=60, tail_pct=0.10):
+    """Rough strategy capacity. Selection is by signal, not by depth, so any eligible name can end up in a
+    side; the binding constraint is the thin tail. We take the `tail_pct` depth quantile of names with a
+    two-sided book, `participation` of it per rotation, quantile*universe names per side, HOLD tranches open."""
     per_side = int(universe * quantile)
-    ok = [r for r in report if r["spread_bps"] is not None]
-    ok.sort(key=lambda r: min(r["bid_depth_usd"], r["ask_depth_usd"]))
+    ok = sorted(min(r["bid_depth_usd"], r["ask_depth_usd"]) for r in report if r["spread_bps"] is not None)
     if len(ok) < per_side:
         return 0.0
-    thin = ok[len(ok) - per_side] if len(ok) > per_side else ok[0]
-    per_name = participation * min(thin["bid_depth_usd"], thin["ask_depth_usd"])
-    return per_name * per_side * 2 * hold
+    thin = ok[int(len(ok) * tail_pct)]
+    return participation * thin * per_side * 2 * hold

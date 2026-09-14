@@ -1,0 +1,365 @@
+{
+ "ts": "2026-09-14T14:02:00.231672+00:00",
+ "book": [
+  {
+   "symbol": "RSPYUSDT",
+   "spread_bps": 7.231371002203177,
+   "bid_depth_usd": 529563.5525880001,
+   "ask_depth_usd": 563552.3157800001
+  },
+  {
+   "symbol": "RAAPLUSDT",
+   "spread_bps": 7.187350263536448,
+   "bid_depth_usd": 60026.436693999996,
+   "ask_depth_usd": 32090.511182
+  },
+  {
+   "symbol": "RMUUSDT",
+   "spread_bps": 0.549943080891878,
+   "bid_depth_usd": 388289.9196158,
+   "ask_depth_usd": 497643.46876509994
+  },
+  {
+   "symbol": "RNVDAUSDT",
+   "spread_bps": 1.8963637225616101,
+   "bid_depth_usd": 581193.3814579999,
+   "ask_depth_usd": 554906.4094149999
+  },
+  {
+   "symbol": "RQQQUSDT",
+   "spread_bps": 3.8217912877310845,
+   "bid_depth_usd": 594815.21313,
+   "ask_depth_usd": 619432.516424
+  },
+  {
+   "symbol": "RMETAUSDT",
+   "spread_bps": 19.232079714698635,
+   "bid_depth_usd": 367126.876192,
+   "ask_depth_usd": 396090.7357470001
+  },
+  {
+   "symbol": "RSPCXUSDT",
+   "spread_bps": 8.075913587724918,
+   "bid_depth_usd": 23372.819162999996,
+   "ask_depth_usd": 52014.218629
+  },
+  {
+   "symbol": "RSNDKUSDT",
+   "spread_bps": 3.30991514286172,
+   "bid_depth_usd": 410842.9837689999,
+   "ask_depth_usd": 577097.3417519999
+  },
+  {
+   "symbol": "RTSLAUSDT",
+   "spread_bps": 0.5551546105585358,
+   "bid_depth_usd": 352659.1006,
+   "ask_depth_usd": 384142.3229300001
+  },
+  {
+   "symbol": "RINTCUSDT",
+   "spread_bps": 22.753128555176218,
+   "bid_depth_usd": 31869.714177999995,
+   "ask_depth_usd": 42153.531018
+  },
+  {
+   "symbol": "RGOOGLUSDT",
+   "spread_bps": 2.310736258339854,
+   "bid_depth_usd": 369980.68818600004,
+   "ask_depth_usd": 270624.60027500003
+  },
+  {
+   "symbol": "RAVGOUSDT",
+   "spread_bps": 7.756057624635015,
+   "bid_depth_usd": 23332.822243000002,
+   "ask_depth_usd": 36798.54274899999
+  },
+  {
+   "symbol": "RAMDUSDT",
+   "spread_bps": 6.378403958725601,
+   "bid_depth_usd": 24207.512796000003,
+   "ask_depth_usd": 27959.982018
+  },
+  {
+   "symbol": "RAMZNUSDT",
+   "spread_bps": 7.110127982303951,
+   "bid_depth_usd": 55394.166786,
+   "ask_depth_usd": 43577.035858999996
+  },
+  {
+   "symbol": "RIVVUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RIWMUSDT",
+   "spread_bps": 4.8535274744318375,
+   "bid_depth_usd": 216133.87536800004,
+   "ask_depth_usd": 271120.54042900004
+  },
+  {
+   "symbol": "RMSFTUSDT",
+   "spread_bps": 6.77736360555694,
+   "bid_depth_usd": 495787.23600199993,
+   "ask_depth_usd": 488911.10569500003
+  },
+  {
+   "symbol": "RORCLUSDT",
+   "spread_bps": 9.698649116729225,
+   "bid_depth_usd": 49674.832992999996,
+   "ask_depth_usd": 34161.477928
+  },
+  {
+   "symbol": "RSKHYUSDT",
+   "spread_bps": 4.499943750702221,
+   "bid_depth_usd": 37725.534308,
+   "ask_depth_usd": 45296.725383
+  },
+  {
+   "symbol": "RSOXLUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RLITEUSDT",
+   "spread_bps": 8.751816001820377,
+   "bid_depth_usd": 651492.630264,
+   "ask_depth_usd": 584708.9909499999
+  },
+  {
+   "symbol": "RMRVLUSDT",
+   "spread_bps": 12.21857676207762,
+   "bid_depth_usd": 14470.714757999998,
+   "ask_depth_usd": 44851.409042
+  },
+  {
+   "symbol": "RSOXXUSDT",
+   "spread_bps": 5.393904887476788,
+   "bid_depth_usd": 21523.644184999997,
+   "ask_depth_usd": 41533.932289000004
+  },
+  {
+   "symbol": "RTQQQUSDT",
+   "spread_bps": 10.227189714370281,
+   "bid_depth_usd": 36670.321284,
+   "ask_depth_usd": 55632.178628999995
+  },
+  {
+   "symbol": "RTSMUSDT",
+   "spread_bps": 6.899751371027317,
+   "bid_depth_usd": 20564.151845,
+   "ask_depth_usd": 26779.511807
+  },
+  {
+   "symbol": "RVRTUSDT",
+   "spread_bps": 9.72289742343175,
+   "bid_depth_usd": 203859.314631,
+   "ask_depth_usd": 271866.47070099995
+  },
+  {
+   "symbol": "RDELLUSDT",
+   "spread_bps": 17.04838180881398,
+   "bid_depth_usd": 23499.835381999997,
+   "ask_depth_usd": 47777.55147900001
+  },
+  {
+   "symbol": "RTLTUSDT",
+   "spread_bps": 7.432181345225104,
+   "bid_depth_usd": 57518.937185,
+   "ask_depth_usd": 49911.809938000006
+  },
+  {
+   "symbol": "RSTXUSDT",
+   "spread_bps": 17.24821694983544,
+   "bid_depth_usd": 151059.873445,
+   "ask_depth_usd": 293780.698567
+  },
+  {
+   "symbol": "RPLTRUSDT",
+   "spread_bps": 13.691698663570541,
+   "bid_depth_usd": 476556.887915,
+   "ask_depth_usd": 600830.631722
+  },
+  {
+   "symbol": "RBEUSDT",
+   "spread_bps": 12.831230437235488,
+   "bid_depth_usd": 25774.265581,
+   "ask_depth_usd": 47623.403711
+  },
+  {
+   "symbol": "RCRMUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RVOOUSDT",
+   "spread_bps": 3.0030244746483623,
+   "bid_depth_usd": 89384.010274,
+   "ask_depth_usd": 111399.237962
+  },
+  {
+   "symbol": "RNBISUSDT",
+   "spread_bps": 6.962010628669824,
+   "bid_depth_usd": 225960.338608,
+   "ask_depth_usd": 277200.16619799996
+  },
+  {
+   "symbol": "RGLDUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RHYGUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RCRWVUSDT",
+   "spread_bps": 16.558249556475523,
+   "bid_depth_usd": 214309.35913199998,
+   "ask_depth_usd": 215675.37819199997
+  },
+  {
+   "symbol": "RSMHUSDT",
+   "spread_bps": 9.01539055959834,
+   "bid_depth_usd": 46417.487909,
+   "ask_depth_usd": 47562.80740799999
+  },
+  {
+   "symbol": "RSOXSUSDT",
+   "spread_bps": 9.814505839630415,
+   "bid_depth_usd": 57004.331531,
+   "ask_depth_usd": 35195.343442
+  },
+  {
+   "symbol": "RXOMUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RDIAUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RQCOMUSDT",
+   "spread_bps": 12.285012285012222,
+   "bid_depth_usd": 145108.36775399995,
+   "ask_depth_usd": 382428.138386
+  },
+  {
+   "symbol": "REWYUSDT",
+   "spread_bps": 6.761325219743327,
+   "bid_depth_usd": 36271.875648,
+   "ask_depth_usd": 52862.627416999996
+  },
+  {
+   "symbol": "RLLYUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RJPMUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RUNHUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RBACUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RIEFAUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RSGOVUSDT",
+   "spread_bps": 5.965993835138517,
+   "bid_depth_usd": 54962.74189600001,
+   "ask_depth_usd": 55811.918255
+  },
+  {
+   "symbol": "RHOODUSDT",
+   "spread_bps": 7.825066295700857,
+   "bid_depth_usd": 41156.978869,
+   "ask_depth_usd": 49333.920808999996
+  },
+  {
+   "symbol": "RMSTRUSDT",
+   "spread_bps": 7.4134479946618965,
+   "bid_depth_usd": 51839.753469999996,
+   "ask_depth_usd": 77087.84631
+  },
+  {
+   "symbol": "RAMATUSDT",
+   "spread_bps": 11.470171701448029,
+   "bid_depth_usd": 23824.772848,
+   "ask_depth_usd": 35993.701305
+  },
+  {
+   "symbol": "RCOSTUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RNFLXUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RIBMUSDT",
+   "spread_bps": 11.041364221889783,
+   "bid_depth_usd": 43154.943341000006,
+   "ask_depth_usd": 27258.923564
+  },
+  {
+   "symbol": "RLRCXUSDT",
+   "spread_bps": 26.208555477766218,
+   "bid_depth_usd": 34839.330836999994,
+   "ask_depth_usd": 36565.115215
+  },
+  {
+   "symbol": "RSHOPUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RWDCUSDT",
+   "spread_bps": 21.3082317679971,
+   "bid_depth_usd": 403499.67337400006,
+   "ask_depth_usd": 387084.9609180001
+  },
+  {
+   "symbol": "RWMTUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  },
+  {
+   "symbol": "RJNJUSDT",
+   "spread_bps": null,
+   "bid_depth_usd": 0.0,
+   "ask_depth_usd": 0.0
+  }
+ ]
+}

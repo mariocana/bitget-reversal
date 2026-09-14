@@ -2,4 +2,3 @@ __pycache__/
 *.pyc
 .venv/
 reports/*.png
-data/orderbook_*.json
